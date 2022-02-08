@@ -19,37 +19,23 @@ class inputverify1 {
 
     public RemoteWebDriver driver;
 
-//    public static final String AUTOMATE_USERNAME = "hritikmishra_Mb75Nr";
-//    public static final String AUTOMATE_ACCESS_KEY = "HtqCHwsiwHKpUycpLKbv";
-//    public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-//    @BeforeTest
-//    public void main() throws Exception {
-//        DesiredCapabilities caps = new DesiredCapabilities();
-//        caps.setCapability("os_version", "10");
-//        caps.setCapability("resolution", "1920x1080");
-//        caps.setCapability("browser", "Chrome");
-//        caps.setCapability("browser_version", "latest");
-//        caps.setCapability("os", "Windows");
-//        caps.setCapability("name", "Sample Test");
-//        caps.setCapability("build", "BStack test");
-//        try {
-//            driver = new RemoteWebDriver(new URL(URL), caps);
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
-//    }
+    public static final String AUTOMATE_USERNAME = "hritikmishra_Mb75Nr";
+    public static final String AUTOMATE_ACCESS_KEY = "HtqCHwsiwHKpUycpLKbv";
+    public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
     @BeforeTest
-    public void setUp() throws Exception {
-     try{
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
-
-        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
-
-        } catch (MalformedURLException e) {
-            System.out.println("Invalid grid URL");
+    public void main() throws Exception {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("os_version", "10");
+        caps.setCapability("resolution", "1920x1080");
+        caps.setCapability("browser", "Chrome");
+        caps.setCapability("browser_version", "latest");
+        caps.setCapability("os", "Windows");
+        caps.setCapability("name", "Sample Test");
+        caps.setCapability("build", "BStack test");
+        try {
+            driver = new RemoteWebDriver(new URL(URL), caps);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
         }
     }
     // java -jar selenium-server-4.1.2.jar hub
