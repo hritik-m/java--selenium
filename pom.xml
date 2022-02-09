@@ -39,7 +39,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>single.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/single.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
